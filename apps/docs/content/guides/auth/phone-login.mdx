@@ -42,7 +42,7 @@ With OTP, a user can sign in without setting a password on their account. They n
 
 ```js
 const { data, error } = await supabase.auth.signInWithOtp({
-  phone: '+13334445555',
+  phone: '+233552945333',
 })
 ```
 
@@ -51,7 +51,7 @@ const { data, error } = await supabase.auth.signInWithOtp({
 
 ```swift
 try await supabase.auth.signInWithOTP(
-  phone: "+13334445555"
+  phone: "+233552945333"
 )
 ```
 
@@ -69,7 +69,7 @@ supabase.auth.signInWith(OTP) {
 
 ```python
 response = supabase.auth.sign_in_with_otp({
-  'phone': '+13334445555',
+  'phone': '+233552945333',
 })
 ```
 
@@ -81,7 +81,7 @@ curl -X POST 'https://cvwawazfelidkloqmbma.supabase.co/auth/v1/otp' \
 -H "apikey: SUPABASE_KEY" \
 -H "Content-Type: application/json" \
 -d '{
-  "phone": "+13334445555"
+  "phone": "+233552945333"
 }'
 ```
 
@@ -110,7 +110,7 @@ const {
   data: { session },
   error,
 } = await supabase.auth.verifyOtp({
-  phone: '13334445555',
+  phone: '+233552945333',
   token: '123456',
   type: 'sms',
 })
